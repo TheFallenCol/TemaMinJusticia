@@ -1,0 +1,105 @@
+<dotnetnuke type="Package" version="9.0">
+  <packages>
+    <package name=".MinJusticia Tema" type="Skin" version="0.0.1">
+      <friendlyName>MinJusticia Tema</friendlyName>
+      <description>MinJusticia custom theme</description>
+      <iconFile>MyIcon.png</iconFile>
+      <owner>
+        <name>German Silva</name>
+        <organization></organization>
+        <url></url>
+        <email></email>
+      </owner>
+      <license src="themeLicense.txt" />
+      <releaseNotes src="themeReleaseNotes.txt" />
+      <dependencies>
+        <dependency type="coreVersion">09.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Skin">
+          <skinFiles>
+            <basePath>Portals\_default\Skins\MinJusticia Tema\</basePath>
+            <skinName>MinJusticia Tema</skinName>
+
+            <!-- Main Directory -->
+            <skinFile>
+              <path />
+              <name>default.png</name>
+            </skinFile>
+            <skinFile>
+              <path />
+              <name>thumbnail_default.png</name>
+            </skinFile>
+            <skinFile>
+              <path />
+              <name>LICENSE</name>
+            </skinFile>
+
+          </skinFiles>
+        </component>
+
+        <!-- Menus, Partials, and Root -->
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Portals\_default\Skins\MinJusticia Tema\</basePath>
+            <resourceFile>
+              <name>else.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <!-- CSS, Fonts, JS, Images Folder -->
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Portals\_default\Skins\MinJusticia Tema\</basePath>
+            <resourceFile>
+              <name>dist.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <!-- Containers Folder -->
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Portals\_default\Containers\MinJusticia Tema\</basePath>
+            <resourceFile>
+              <name>cont.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <!-- Ensure MIME types are mapped -->
+        <component type="Config">
+          <config>
+            <configFile>web.config</configFile>
+            <install>
+              <configuration>
+                <nodes configfile="web.config">
+                  <node path="/configuration/system.webServer" targetpath="/configuration/system.webServer/staticContent" action="update" collision="ignore">
+                    <staticContent>
+                    </staticContent>
+                  </node>
+                  <node path="/configuration/system.webServer/staticContent" action="update" key="fileExtension" collision="ignore">
+                    <remove fileExtension=".otf" />
+                    <mimeMap fileExtension=".otf" mimeType="font/otf" />
+                    <remove fileExtension=".svg" />
+                    <mimeMap fileExtension=".svg" mimeType="image/svg+xml" />
+                    <remove fileExtension=".woff" />
+                    <mimeMap fileExtension=".woff" mimeType="font/x-woff" />
+                    <remove fileExtension=".woff2" />
+                    <mimeMap fileExtension=".woff2" mimeType="application/font-woff2" />
+                  </node>
+                </nodes>
+              </configuration>
+            </install>
+            <uninstall>
+              <configuration>
+                <nodes />
+              </configuration>
+            </uninstall>
+          </config>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

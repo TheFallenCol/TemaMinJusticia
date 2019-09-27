@@ -1,0 +1,39 @@
+@import 'autoload/autoload';
+@import 'variables/variables';
+@import 'mixins/mixins';
+@import 'base';
+@import 'components/components';
+@import 'pages/pages';
+@import 'sections/sections';
+
+.SliderText {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    .SliderText {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    .SliderText {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    .SliderText {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .SliderText {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }

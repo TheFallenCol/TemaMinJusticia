@@ -1,0 +1,5 @@
+.bannerpane {
+  background:$secondary-color;
+  background:linear-gradient(135deg, darken($secondary-color, 20%) 0%, $secondary-color 50%, lighten($secondary-color, 20%) 100%);
+  color:white;
+}
