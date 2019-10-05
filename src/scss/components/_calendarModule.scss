@@ -1,0 +1,50 @@
+.calendarModule{
+    height: 25rem;
+    background-color: #1a356b;
+    overflow-y:auto;
+
+    .calendarMonth{
+        max-height: .1rem;
+        font-weight: 200;
+    }
+
+    .calendarCol-3{
+        padding-right: 6px;
+    }
+
+    .calendarCard{
+        border-radius: 0rem;        
+        
+        .calendarCard-header{
+            background-color: rgba(0,0,0,0);
+            border-bottom: 0rem;
+            margin: .5rem 0rem 0rem 0.75rem;
+            padding: 0rem;
+        }
+
+        .calendarCard-Block{
+            margin: .5rem .5rem .5rem .8rem;
+        }
+
+        .calendarH1{
+            font-weight: 900;
+            text-align: left;
+            font-style: normal;
+            line-height: 1;
+            margin: 0 0 0rem 0;
+        }
+    }    
+
+    .card-box1, .card-box6{
+        background-color: #6699ff;
+    }
+
+    .card-box2, .card-box4{
+        background-color: #009ccc;
+    }
+
+    .card-box3, .card-box5{
+        background-color: #6f9ed4;
+    }
+}
+

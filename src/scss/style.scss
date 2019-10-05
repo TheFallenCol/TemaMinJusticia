@@ -9,11 +9,45 @@
 .SliderText {
     font-size: 1rem;
   }
+
+  .NormalText{
+    font-size: .7rem;
+    line-height: 1.2rem;
+  }
+
+  .HeaderText{
+    font-size: 2.4rem;
+  }
+
+  .calendarYearText{
+    font-size: 4rem;
+    font-family: $open-sans;
+  }
+
+  .h1{
+    font-size: 1.8rem;
+  }
   
   @include media-breakpoint-up(sm) {
     .SliderText {
       font-size: 1rem;
       line-height: 1rem;
+    }
+
+    .HeaderText{
+      font-size: 2.4rem;
+    }
+
+    .calendarCard{
+      min-height: 7rem;
+    }
+
+    .calendarYearText{
+      font-size: 6.2rem;
+    }
+
+    .h1{
+      font-size: 2rem;
     }
   }
   
@@ -22,6 +56,22 @@
       font-size: 1.5rem;
       line-height: 1.5rem;
     }
+
+    .HeaderText{
+      font-size: 2.6rem;
+    }
+
+    .calendarCard{
+      min-height: 10rem;
+    }
+
+    .calendarYearText{
+      font-size: 6.4rem;
+    }
+
+    .h1{
+      font-size: 2.5rem;
+    }
   }
   
   @include media-breakpoint-up(lg) {
@@ -29,11 +79,44 @@
       font-size: 1.6rem;
       line-height: 1.6rem;
     }
+
+    .NormalText{
+      font-size: .8rem;
+    }
+
+    .HeaderText{
+      font-size: 2.8rem;
+    }
+
+    .calendarCard{
+      min-height: 11rem;
+    }
+
+    .calendarYearText{
+      font-size: 6.6rem;
+    }
   }
 
   @include media-breakpoint-up(xl) {
     .SliderText {
       font-size: 2rem;
       line-height: 2rem;
+    }
+    
+    .NormalText{
+      font-size: 0.9rem;      
+    }
+
+    .HeaderText{
+      font-size: 3rem;
+    }
+
+    .calendarCard{
+      min-height: 11rem;
+    }
+
+    .calendarYearText{
+      font-size: 7rem;
+      // @include font-size(80);
     }
   }
