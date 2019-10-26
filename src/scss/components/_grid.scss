@@ -17,10 +17,10 @@
     }
 
     // adds padding to the child div of the col to even spacing
-    .container [class^="col-#{$size}"] > div {
-      padding-left:$cspacer !important;
-      padding-right:$cspacer !important;
-    }
+    // .container [class^="col-#{$size}"] > div {
+    //   padding-left:$cspacer !important;
+    //   padding-right:$cspacer !important;
+    // }
 
     // removes padding for container within fluid container
     .container-fluid .container {

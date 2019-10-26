@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="9.0">
   <packages>
-    <package name=".MinJusticia Tema" type="Skin" version="0.0.1">
+    <package name=".MinJusticia Tema" type="Skin" version="0.0.2">
       <friendlyName>MinJusticia Tema</friendlyName>
       <description>MinJusticia custom theme</description>
       <iconFile>MyIcon.png</iconFile>

@@ -6,13 +6,13 @@
   a[id*="dnnLOGO"] {
     padding:1rem;
     img {
-      height:45px;
+      height:25px;
       max-height:100%;
       width:auto;
     }
     @include mq-max-width(400) {
       img {
-        height:30px;
+        height:15px;
       }
     }
   }
