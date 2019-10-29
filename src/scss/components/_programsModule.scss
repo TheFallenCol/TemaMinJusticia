@@ -1,0 +1,26 @@
+.header-programs{
+    .program-header{
+        margin: 3rem 1rem 1.2rem 0rem !important;
+        color: #757575;
+        transition: all .2s ease-in-out;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+    
+    .program-header:hover{
+        color: #000;
+        transform: scale(1.1);
+        border-bottom: .2rem solid #ffab00;
+    }
+    
+    .active-option{
+        color: #000;
+        transform: scale(1.1);
+        border-bottom: .2rem solid #ffab00;
+    }
+}
+
+
+
+

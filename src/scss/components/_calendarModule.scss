@@ -1,13 +1,10 @@
 .calendarModule{
     height: 25rem;
     background-color: #1a356b;
-    background-image: url("/DesktopModules/MVC/CalendarModule/images/calendarBackground.jpg");
+    background-image: url("/DesktopModules/MVC/CalendarModule/images/calendarBackground_Arriba.png");
     overflow-y:auto;
-
-    .calendarMonth{
-        max-height: .1rem;
-        font-weight: 200;
-    }
+    color: #fff;
+    background-size: cover;
 
     .calendarCol-3{
         padding-right: 6px;
@@ -37,15 +34,27 @@
     }    
 
     .card-box1, .card-box6{
-        background-color: #6699ff;
+        background-color: #fff;
     }
 
     .card-box2, .card-box4{
-        background-color: #009ccc;
+        background-color: #fff;
     }
 
     .card-box3, .card-box5{
-        background-color: #6f9ed4;
+        background-color: #fff;
     }
 }
 
+@include media-breakpoint-up(md) {
+    .calendarModule{
+        background-image: url("/DesktopModules/MVC/CalendarModule/images/calendarBackground.jpg");
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .calendarModule{
+        background-size: contain;
+        background-image: url("/DesktopModules/MVC/CalendarModule/images/calendarBackground.jpg");
+    }
+}
