@@ -1,26 +1,85 @@
-.header-programs{
-    .program-header{
-        margin: 3rem 1rem 1.2rem 0rem !important;
-        color: #757575;
-        transition: all .2s ease-in-out;
-        text-transform: uppercase;
-        font-size: .9rem;
-        font-weight: 400;
+.programs{
+    .header-programs{
+        .program-header{
+            margin: 3rem 1rem 1.2rem 0rem !important;
+            color: #757575;
+            transition: all .2s ease-in-out;
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: 400;
+        }
+        
+        .program-header:hover{
+            color: #000;
+            transform: scale(1.1);
+            border-bottom: .2rem solid #ffab00;
+        }
+        
+        .active-option{
+            color: #000;
+            transform: scale(1.1);
+            border-bottom: .2rem solid #ffab00;
+        }
+    }
+
+    .body-programs{
+        margin-bottom: 1rem;
+    }    
+}
+
+.allPrograms{
+    .header-allPrograms{
+        font-size: 1.3rem;
+        
+        .allPrograms-header{
+            margin-bottom: -1rem;
+            color: #757575;
+        }
+
+        .allPrograms-header:hover{
+            margin-bottom: -.8rem;
+            color: #000;
+            transform: scale(1.1);
+        }
+    }
+
+    .allPrograms-header-arrow{
+        color: #4976d1;
+        font-size: 1.5rem;
     }
     
-    .program-header:hover{
-        color: #000;
-        transform: scale(1.1);
-        border-bottom: .2rem solid #ffab00;
-    }
-    
-    .active-option{
-        color: #000;
-        transform: scale(1.1);
-        border-bottom: .2rem solid #ffab00;
+    .body-allPrograms{ 
+        .not-active{
+            display: none;
+        }
+
+        .program-active{
+            display: flex;
+        }
     }
 }
 
+.program-element{
+    .program-title{
+        margin: 0rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: .9rem;
 
+        .program-icon{
+            margin-right: 1rem;;
+        }
+    }
 
+    .program-description{
+        margin: .5rem 2rem 0rem 0rem;
+        font-weight: 400;
+        font-size: .82rem;
+        font-family: "Work Sans","Open Sans",Helvetica,sans-serif;
+        color:#000;
+    }
+}
 
+.no-borders{
+    border: 0;
+}
