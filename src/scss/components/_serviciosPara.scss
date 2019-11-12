@@ -1,0 +1,167 @@
+.sp-parallax{
+
+    background-image: url('/DesktopModules/MVC/ServiceForModule/images/ServiciosPara_Background.jpg');
+    height: 22.1rem; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .sp-titulo-categorias{
+        font-size: 1.5rem;
+        color: #fff;
+        letter-spacing: .8rem;
+        margin-top: 1.2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        .sp-titulo-categorias{
+            font-size: 2.5rem;
+            letter-spacing: 1rem;
+            margin-top: 2rem;
+        }    
+    }
+
+    .sp-menu-categories{
+
+        .sp-category-button{
+            text-align: center;
+            color: #fff;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+        
+        .sp-category-button > p{
+            font-size: .8rem;
+            font-family: "Work Sans";
+            letter-spacing: .1rem;
+            margin-bottom: 2.2rem;
+            transition: all .2s ease-in-out;
+        }
+
+        .sp-category-button:hover{
+            color: #ffab00;
+            transform: scale(1.1);
+            //border-bottom: 1rem solid #ffab00;
+        }
+
+        .category-button-active{
+            color: #ffab00;
+            //border-bottom: 1rem solid #ffab00;
+        }
+
+        @include media-breakpoint-up(sm) {
+            .sp-category-button{
+                font-size: 5rem;
+            }
+            
+            .sp-category-button > p{
+                font-size: 1.5rem;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .sp-category-button{
+                font-size: 6rem;
+            }
+            
+            .sp-category-button > p{
+                font-size: 1.8rem;
+            }
+        }
+    }    
+}
+
+.sp-menu-options-container{
+    width: 100%;
+    min-height: 3.8rem;
+    margin: 0rem;
+    background-color: #ffab00;
+    color: #fff;
+
+    .active-submenu{
+        display: flex;
+    }
+
+    .not-active-submenu{
+        display: none;
+    }
+
+    .sp-menu-option {
+        display: flex;
+        height: 100%;
+        max-height: 100%;
+    }
+    
+    .sp-options{
+        margin: 0rem;
+
+        .sp-text {
+            color: #f2f2f2;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 0rem 1rem 0rem 1rem;
+        }
+
+        .sp-text:hover {
+            color: black;
+            margin: 0rem 0.9rem 0rem 0.9rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            .sp-text {
+                font-size: 1.4rem;
+                margin: 0rem 1rem 0rem 1rem;
+            }
+        }
+    }
+
+    .sp-prev, .sp-next {
+        cursor: pointer;
+        width: auto;
+        padding: .2rem .5rem .2rem .5rem;
+        color: white;
+        font-size: 1.5rem;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .sp-prev{
+        padding-left: 3rem;
+        padding-right: 1.2rem;
+    }
+    
+    .sp-next{
+        padding-left: 1.2rem;
+        padding-right: 3rem;
+    }
+    
+    .sp-prev:hover, .sp-next:hover {
+        background-color: #000;
+    }
+
+    @include media-breakpoint-up(md) {
+        .sp-prev{
+            font-size: 2.2rem;
+            padding: .5rem .5rem .5rem .5rem;
+            padding-left: 4rem;
+            padding-right: 3rem;
+        }
+    
+        .sp-next{
+            font-size: 2.2rem;
+            padding: .5rem .5rem .5rem .5rem;
+            padding-left: 3rem;
+            padding-right: 4rem;            
+        }
+    }
+}
+
+.sp-menu-options-container-active{
+    display: flex;
+}
+
+.sp-menu-options-container-not-active{
+    display: none;
+}

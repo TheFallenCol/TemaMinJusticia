@@ -32,6 +32,18 @@
 
   <div class="container full-width">
     <div class="row justify-content-center">
+      <div id="MenuPane" class="col text-center" runat="server"></div> 
+    </div>
+  </div>
+
+  <div class="container full-width">
+    <div class="row justify-content-center">
+      <div id="ServiceForPane" class="col text-center" runat="server"></div> 
+    </div>
+  </div>
+
+  <div class="container full-width">
+    <div class="row justify-content-center">
       <div id="ProgramsPane" class="col text-center" runat="server"></div> 
     </div>
   </div>

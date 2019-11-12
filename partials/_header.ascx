@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row nav-main">
         <dnn:LOGO id="dnnLOGO" runat="server" class="logoGovCol"/>
-        <nav id="nav-items">
+        <!-- <nav id="nav-items">
           <dnn:MENU id="menu" MenuStyle="menus/razor" runat="server" NodeSelector="*"></dnn:MENU>
-        </nav>    
+        </nav>     -->
       </div>
     </div>
   </div> 

@@ -55,7 +55,7 @@
 
 @include media-breakpoint-up(lg) {
     .calendarModule{
-        background-size: contain;
+        background-size: cover;
         background-image: url("/DesktopModules/MVC/CalendarModule/images/calendarBackground.jpg");
     }
 }

@@ -1,4 +1,16 @@
 @font-face {
+    font-family: 'minjusticia_icon';
+    src: url('../fonts/fonts_mixed_minjusticia_fontello.eot?11307772');
+    src: url('../fonts/fonts_mixed_minjusticia_fontello.eot?11307772#iefix') format('embedded-opentype'),
+         url('../fonts/fonts_mixed_minjusticia_fontello.woff2?11307772') format('woff2'),
+         url('../fonts/fonts_mixed_minjusticia_fontello.woff?11307772') format('woff'),
+         url('../fonts/fonts_mixed_minjusticia_fontello.ttf?11307772') format('truetype'),
+         url('../fonts/fonts_mixed_minjusticia_fontello.svg?11307772#fonts_mixed_minjusticia_fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
     font-family: 'Open Sans';
     src: url('../fonts/OpenSans-Regular.eot');
     src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
@@ -126,16 +138,4 @@
          url('../fonts/work-sans-v5-latin-800.woff') format('woff'), /* Modern Browsers */
          url('../fonts/work-sans-v5-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/work-sans-v5-latin-800.svg#WorkSans') format('svg'); /* Legacy iOS */
-  }
-  
-  @font-face {
-    font-family: 'minjusticia-icon';
-    src: url('../fonts/fonts_mixed_minjusticia_fontello.eot?75802209');
-    src: url('../fonts/fonts_mixed_minjusticia_fontello.eot?75802209#iefix') format('embedded-opentype'),
-         url('../fonts/fonts_mixed_minjusticia_fontello.woff2?75802209') format('woff2'),
-         url('../fonts/fonts_mixed_minjusticia_fontello.woff?75802209') format('woff'),
-         url('../fonts/fonts_mixed_minjusticia_fontello.ttf?75802209') format('truetype'),
-         url('../fonts/fonts_mixed_minjusticia_fontello.svg?75802209#fonts_mixed_minjusticia_fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
   }
