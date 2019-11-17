@@ -6,11 +6,31 @@
     var root = Model.Source.root;
 }
 
-<nav id="nav-items">
-    <ul class="slimmenu normal" id="navigation">
-        @RenderPages(root.Children)
-    </ul>
-</nav>
+@functions
+{
+    public void setCantidadSubMenus(int sub_menu)
+    {
+
+        Session["sub-menu"] = sub_menu;
+    }
+
+    public int obtenerCantidadSubMenus()
+    {
+        return Convert.ToInt32(Session["sub-menu"].ToString());
+    }
+}
+
+<div id="menu-row" class="row align-items-center justify-content-center">
+    <div class="col-12">
+        <nav id="MinJusticia-menu">
+            <label for="tm" id="toggle-menu">Menu<span class="main-label drop-icon">▾</span></label>
+            <input type="checkbox" id="tm">
+            <ul class="main-menu clearfix">
+                @RenderPages(root.Children)
+            </ul>
+        </nav>
+    </div>
+</div>
 
 @helper RenderPages(IEnumerable<MenuNode> pages)
 {
@@ -19,55 +39,83 @@
         return;
     }
 
+    setCantidadSubMenus(1);
+
     foreach (var page in pages)
     {
         var hasChildren = page.HasChildren();
-        var split = hasChildren ? "split" : string.Empty;
-        var single = hasChildren ? "single" : string.Empty;
 
-        <li class="@(page.Selected ? "active" : string.Empty)">
-            @if (page.Enabled)
+        if (hasChildren)
+        {
+            var sm = "sm" + obtenerCantidadSubMenus().ToString();
+            <li>
+                <a href="@page.Url" target="@page.Target">
+                    <p class="menu-texto">@page.Text</p>
+                    <label title="Toggle Drop-down" class="drop-icon" for="@sm">▾</label>
+                </a>
+                <input type="checkbox" id="@sm">
+                <ul class="sub-menu">
+                    @RenderNestedPages(page.Children)
+                </ul>
+            </li>
+        }
+        else
+        {
+            if (page.Enabled)
             {
-                <a href="@page.Url" class="btn btn-primary @split" target="@page.Target">@page.Text</a>
+                <li><a href="@page.Url" target="@page.Target"><p class="menu-texto">@page.Text</p></a></li>
             }
             else
             {
-                <a href="#" class="btn btn-primary @single" target="@page.Target">@page.Text</a>
+                <li><a href="#" target="@page.Target"><p class="menu-texto">@page.Text</p></a></li>
             }
-
-            @if (hasChildren)
-            {
-                <ul>
-                    @RenderNestedPages(page.Children)
-                </ul>
-            }
-        </li>
+        }
     }
 }
 
 @helper RenderNestedPages(IEnumerable<MenuNode> pages)
 {
+    setCantidadSubMenus(obtenerCantidadSubMenus() + 1);
+
     foreach (var page in pages)
     {
         var hasChildren = page.HasChildren();
-        var split = hasChildren ? "split" : string.Empty;
 
-        <li class="@(page.Selected ? "active" : string.Empty)">
-            @if (page.Enabled)
+        if (hasChildren)
+        {
+            var sm = "sm" + obtenerCantidadSubMenus().ToString();
+            <li>
+                <div>
+                    <a href="@page.Url" target="@page.Target">
+                        @page.Text
+                        <span class="drop-icon">▾</span>
+                        <label title="Toggle Drop-down" class="drop-icon" for="@sm">▾</label>
+                    </a>
+                    <input type="checkbox" id="@sm">
+                    <ul class="sub-menu">
+                        @RenderNestedPages(page.Children)
+                    </ul>
+                </div>
+            </li>
+        }
+        else
+        {
+            if (page.Enabled)
             {
-                <a href="@page.Url" class="@split" target="@page.Target">@page.Text</a>
+                <li>
+                    <div>
+                        <a href="@page.Url" target="@page.Target">@page.Text</a>
+                    </div>
+                </li>
             }
             else
             {
-                <a href="#" target="@page.Target">@page.Text</a>
+                <li>
+                    <div>
+                        <a href="#" target="@page.Target">@page.Text</a>
+                    </div>
+                </li>
             }
-
-            @if (hasChildren)
-            {
-                <ul>
-                    @RenderNestedPages(page.Children)
-                </ul>
-            }
-        </li>
+        }
     }
 }
