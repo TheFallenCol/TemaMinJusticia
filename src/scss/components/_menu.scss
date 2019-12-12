@@ -1,5 +1,13 @@
 #menu-row{
-  min-height:7em;
+  min-height:5em;
+  
+  .menu-nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
 }
 
 #MinJusticia-menu ul {
@@ -125,19 +133,22 @@
   top: .3em;
 }
 
-@media only screen and (max-width: 64em) and (min-width: 52.01em) {
-  #MinJusticia-menu li {
-   width: 33.333%;
+@media only screen and (min-width: 36em) {
+  #menu-row{
+    min-height:7em;
+    
+    .menu-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
   }
-
-  #MinJusticia-menu .sub-menu li {
-    font-size: 1.1rem;
-    width: auto;
-    font-weight: 200;
-  }
-}
-
-@media only screen and (min-width: 52em) {
+  
   #MinJusticia-menu .main-menu {
     display: block;
   }
@@ -210,5 +221,32 @@
 
   .first-drop-icon{
     color: #e2ecfd;
+  }
+}
+
+@media only screen and (max-width: 66em) and (min-width: 36.01em) {
+  #MinJusticia-menu li {
+   width: 33.333%;
+  }
+
+  #MinJusticia-menu .sub-menu li {
+    font-size: 1.1rem;
+    width: auto;
+    font-weight: 200;
+  }
+
+  #menu-row{
+    min-height:7em;
+    
+    .menu-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
   }
 }

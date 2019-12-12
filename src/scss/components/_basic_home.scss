@@ -1,0 +1,306 @@
+/************************************************************************************
+2019 Equipo Ministerio de Justicia
+CSS MinJusticia 2019
+REESCRIBIENDO BOOTSTRAP (archivo base a travÃ©s de https://www.bootstrap-live-customizer.com)
+@juceboper  - Julio Bolano
+/************************************************************************************/
+.bg-default-redes{
+    background-color: #FFF;
+    color: #000;
+}
+
+/************************************************************************************
+HOME
+*************************************************************************************/
+/* ENCABEZADO */
+
+div#facebook iframe {
+    width: 100%;
+    height: 382px;
+}
+
+
+div#instagram a:nth-child(2){
+    background-image: none;
+    position: relative;
+    padding: 0px;
+    background-color: #FFF;
+    display: block;
+}
+
+div#instagram a:nth-child(2) img {
+    width: 100%;
+    max-height: 380px;
+}
+
+/********** REDES SOCIALES FIJA ************/
+#social-fixed ul {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    background-color: purple;
+    z-index: 999;
+}
+
+
+#social-fixed ul li {
+    display: inline-block;
+    margin: 0px;
+}
+
+#social-fixed img {
+    width: 25px;
+    margin: 4px;
+}
+
+#link-redes{
+    float: left;
+    width: 100%;
+    margin: 20px 10px;
+}
+
+#link-redes ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+div#redes_sociales_home{overflow: auto;}
+
+div#redes_sociales_home a{
+    color: #6C4495;
+}
+
+div#facebook
+, div#twitter
+, div #instagram{
+    display: inline;
+}
+
+#redes_sociales_home .tab-redes {
+    height: 40px;
+    margin-top: -4px;
+    position: relative;
+}
+
+#redes_sociales_home .tab-redes{
+    background-image: url(../img/tab.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+div#facebook a
+, div#twitter a
+, div#instagram a{
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+
+div#facebook a{
+    background-image: url(../images/facebook_tab.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+}
+
+div#twitter a{
+    background-image: url(../images/twitter_tab.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+}
+
+div#instagram a{
+    background-image: url(../images/insta_tab.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+}
+
+div#instagram iframe{
+    width: 100% !important;
+    height: 400px !important;
+}
+
+div#twitter >.tab-redes+div {
+    margin-top: 0px;
+    background-color: #fff;
+}
+
+div#link-redes ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: justify;
+}
+
+div#link-redes ul > li{
+    display: inline-block;
+}
+
+
+    div#facebook, div#twitter{
+        margin-top: 20px;
+    }
+
+    .footer {
+        margin-top: 24px;
+        line-height: 0px;
+        font-size: 12px;
+    }
+
+
+    .embed-responsive{
+        height: 230px;
+    }
+
+#instagram{margin-top: 20px;}
+
+div#redes_sociales_home {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;;
+}
+
+div#facebook, div#twitter, div #instagram {
+    display: inline;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+
+#social-fixed ul {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    background-color: #40758a;
+    z-index: 999;
+}
+
+#container_footer, .bg-warning{
+    background-color: #40758a;
+}
+
+div#redes_sociales_home {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;;
+}
+
+div#facebook, div#twitter, div #instagram {
+    display: inline;
+    border-bottom: 3px solid #00bdd7;
+    border-top: 3px solid #00bdd7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#container_footer, .bg-warning {
+    background-color: #3366CC;
+}
+
+div#facebook, div#twitter, div #instagram {
+    display: inline;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+#social-fixed ul {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    background-color: #F42F63;
+    z-index: 999;
+}
+
+#backgroud_footer{
+	background-color:#345bc6;
+	color:white;
+}
+
+#color-background-social{
+	background-color:#345bc6;
+	color:white;
+}
+
+.embed-responsive{
+    height:37rem !important;
+    text-align: center;
+}
+
+.color-fondo{
+    background-color:#e2ecfd !important;
+    padding-top: 5%;
+}
+
+.color-fondo-see{
+    background-color:#e2ecfd !important;
+}
+
+.color-fondo-top{
+    background:linear-gradient(white 50%, #e2ecfd 50%) !important;
+}
+
+.color-fondo-bottom{
+    background:linear-gradient(#e2ecfd 50%, white 50%) !important;
+}
+
+.input-group.md-form.form-sm.form-1 input{
+border: 1px solid #bdbdbd;
+border-top-right-radius: 0.25rem;
+border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input {
+border: 1px solid #bdbdbd;
+border-top-left-radius: 0.25rem;
+border-bottom-left-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-2 input.red-border {
+border: 1px solid #ef9a9a;
+}
+.input-group.md-form.form-sm.form-2 input.lime-border {
+border: 1px solid #cddc39;
+}
+.input-group.md-form.form-sm.form-2 input.amber-border {
+border: 1px solid #ffca28;
+}
+
+.boton-secundario{
+background-color:#345bc6;
+border-color:#345bc6;
+border-radius: 0px 10px 10px 0px;
+}

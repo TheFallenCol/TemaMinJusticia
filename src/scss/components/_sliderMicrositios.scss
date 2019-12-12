@@ -1,0 +1,119 @@
+.imageFullScreen{
+    width: 100%;
+    height: 10em;
+}
+
+.imgDiv{
+    display: none;
+}
+
+.imgActive{
+    display: block;
+}
+
+.rowBackgroundColor{
+    background-color: #081c4e;
+    height: 7em;
+}
+
+.mcs-anterior, .mcs-siguiente {			
+    cursor: pointer;						
+    padding: 16px;
+    color: #3366cc !important;
+    font-weight: 500;
+    font-size: 1.5rem;			
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.mcs-div-anterior, .mcs-div-siguiente{
+    transition:all 0.3s ease;
+    display: inline-block;
+}
+
+.mcs-div-anterior:hover, .mcs-div-siguiente:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+.mcs-textoSlider{
+    display: none;
+}
+
+.mcs-texto-activo{
+    display: block;
+    color: #fff;
+    margin-left: 1em;
+    text-align: left;
+}
+
+.mcs-punto {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:#081c4e;
+    border-radius: 50%;
+    display: inline-flex;
+    transition: background-color 0.6s ease;
+    border: 1px solid #3366cc;
+}
+
+.mcs-punto-activo, .mcs-punto:hover {
+    background-color: #3366cc;
+}	
+
+.mcs-anterior, .mcs-siguiente,.mcs-textoSlider {
+    font-size: 0.8rem;
+}
+
+.mcs-botones{
+    text-align:center;
+}
+
+/* On smaller screens, decrease text size */
+// @media only screen and (max-width: 300px) {
+//   .mcs-anterior, .mcs-siguiente,.mcs-textoSlider {font-size: 11px}
+// }
+
+@include media-breakpoint-up(sm) {
+    .mcs-anterior, .mcs-siguiente,.mcs-textoSlider {        
+        font-size: 1rem;
+    }
+
+    .imageFullScreen{
+        width: 100%;
+        height: 15em;
+    }
+
+    .rowBackgroundColor{
+        background-color: #081c4e;
+        height: 6em;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .mcs-anterior, .mcs-siguiente,.mcs-textoSlider {
+        font-size: 1.2rem;
+    }
+
+    .mcs-texto-activo{
+        margin-left: 4em;
+    }
+
+    .rowBackgroundColor{
+        background-color: #081c4e;
+        height: 4em;
+    }
+
+    .imageFullScreen{
+        width: 100%;
+        height: 28em;
+    }
+
+    .mcs-botones{
+        text-align:right;
+    }
+}
