@@ -45,6 +45,17 @@
     .card-box3, .card-box5{
         background-color: #fff;
     }
+
+    .calendar-url{
+        position: relative;
+        margin-bottom: 2%;
+        text-align: right;
+
+        .plus-simbol{
+            color:gray;
+            font-size: 2.2rem;
+        }
+    }
 }
 
 @include media-breakpoint-up(md) {
