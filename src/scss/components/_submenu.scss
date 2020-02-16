@@ -1,0 +1,192 @@
+.sbmcs-fondo{
+    background-color: #e2ecfd;
+}
+
+.sbmcs-sizeContainer{
+    height: 100%;
+}
+
+.sbmcs-iconContainer{
+    background-color: white;
+    border: 1px solid white;
+      padding: 10px;
+      border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    -webkit-box-shadow: 0px 10px 56px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 56px -21px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 56px -21px rgba(0,0,0,0.75);
+
+    .sbmcs-category-button{
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .sbmcs-category-button > p{
+        font-size: .8rem;
+        font-family: "Work Sans";
+        letter-spacing: .1rem;
+        margin-bottom: 2.2rem;
+        transition: all .2s ease-in-out;
+    }
+
+    .sbmcs-category-button:hover{
+        color: #ffab00;
+    }
+
+    .sbmcs-category-button-active{
+        color: #ffab00;
+    }
+}
+
+.sbmcs-contenedorProgram{
+    .sbmcs-ContenedorIcono{        
+        .sbmcs-Icono{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }	
+    }
+
+    .sbmcs-Textos{
+        display: inline;
+        text-align: left;
+        
+        .sbmcs-Titulo{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .sbmcs-Descripcion{
+            text-align: left;
+        }
+    }
+}
+
+.sbmcs-menu-options-container{
+    color: #fff;
+
+    .sbmcs-programContainer{
+        background-color: #ffab00;
+        margin-top: -0.3rem;
+        
+        .sbmcs-prev, .sbmcs-next {
+            cursor: pointer;
+            width: auto;
+            padding: .2rem .5rem .2rem .5rem;
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        .sbmcs-prev{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+        .sbmcs-next{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        
+        .sbmcs-prev:hover, .sbmcs-next:hover {
+            background-color: #000;
+        }
+
+        .active-submenu{
+            display: flex;
+        }
+        
+        .not-active-submenu{
+            display: none;
+        }
+        
+        .sbmcs-menu-option {
+            display: flex;
+            height: 100%;
+            max-height: 100%;
+
+            .sbmcs-options{
+                margin: 0rem;
+                
+                .sbmcs-text {
+                    color: #f2f2f2;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    margin: 0rem 1rem 0rem 1rem;
+                }
+
+                .sbmcs-text:hover {
+                    text-decoration: none;
+                    color: black;
+                    margin: 0rem 0.9rem 0rem 0.9rem;
+                }
+            }
+        }        
+    }
+}
+
+.sbmcs-menu-options-container-active{
+    display: flex;
+}
+
+.sbmcs-menu-options-container-not-active{
+    color: #000;
+    display: none;
+}
+
+/* eXtra LarGe */
+/* @media only screen and (min-width: 1201px) {
+    .sbmcs-Textos{
+        margin-left: 0rem;
+        text-align: left;						
+    }
+} */
+
+/* LarGe */
+/* @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .sbmcs-prev{
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .sbmcs-next{
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+} */
+
+/* Medium */
+/* @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .sbmcs-sizeContainer{
+        height: 100%;
+    }
+} */
+
+/* Small */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .sbmcs-prev{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .sbmcs-next{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 576px) {
+    .sbmcs-prev{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .sbmcs-next{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}

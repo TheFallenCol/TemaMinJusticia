@@ -1,0 +1,175 @@
+.msm-sizeContainer{
+    height: 100%;
+}
+
+.msm-fondo{
+    background-color: #ffab00;
+    color: black !important;
+}
+
+.msm-programContainer{
+    background-color: #ffab00;
+    margin-top: 0rem;			
+}
+
+.msm-menuSliderContainer{
+    border: 1px solid #ffab00;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 56px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 56px -21px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 56px -21px rgba(0,0,0,0.75);
+}
+
+.msm-Titulo{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.msm-prev, .msm-next, .msm-prev-menu, .msm-next-menu{
+    cursor: pointer;
+    width: auto;
+    padding: .2rem .5rem .2rem .5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.msm-prev-menu{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.msm-prev{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.msm-next-menu{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.msm-next{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.msm-prev:hover, .msm-next:hover, .msm-prev-menu:hover, .msm-next-menu:hover {
+    background-color: #000;
+}
+
+.msm-menu-options-container{
+    color: #fff;
+margin: 0% 2%;
+}
+
+.active-submenu{
+    display: flex;
+}
+
+.msm-not-active-submenu{
+    display: none;
+}
+
+.msm-menu-option {
+    display: flex;
+    height: 100%;
+    max-height: 100%;
+}
+
+.msm-options{
+    margin: 0rem;
+}
+
+.msm-text {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.msm-text:hover {
+    text-decoration: none;
+    color: black;
+    margin: 0rem 0.9rem 0rem 0.9rem;
+}
+
+.msm-menu-options-container-active{
+    display: flex;
+}
+
+.msm-menu-options-container-not-active{
+    color: #000;
+    display: none;
+}
+
+.msm-category-button{
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0em 1em;
+}
+
+.msm-category-button:hover{
+    color: #fff;
+}
+
+.msm-category-button-active{
+    color: #fff;
+}
+
+/* eXtra LarGe */
+/* @media only screen and (min-width: 1201px) {
+    .msm-textos{
+        margin-left: 0rem;
+        text-align: left;						
+    }
+} */
+
+/* LarGe */
+/* @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .msm-prev, .msm-prev-menu{
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .msm-next, .msm-next-menu{
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+} */
+
+/* Medium */
+/* @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .msm-sizeContainer{
+        height: 100%;
+    }
+} */
+
+/* Small */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .msm-prev, .msm-prev-menu{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .msm-next, .msm-next-menu{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 576px) {
+    .msm-prev, .msm-prev-menu{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+
+    .msm-next, .msm-next-menu{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}
